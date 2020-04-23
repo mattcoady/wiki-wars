@@ -1,0 +1,65 @@
+body {
+  font-family: "Montserrat",sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 4vw;
+  background: rgba(218,51,51,1);
+  color: white;
+  padding: 1vw;
+  font-style: italic;
+  width: 100%;
+  transition: all 2s cubic-bezier(1, -0.03, 0.71, 0.99);
+  min-height: 30vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.play .title{
+  min-height: 100vh;
+}
+
+.title .innerTitle {
+  opacity: 1;
+  transition: all .5s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.play .title .innerTitle {
+  opacity: 0;
+}
+
+.round-info {
+  text-align: center;
+}
+
+.round-info span {
+  padding: 10px;
+}
+
+[state="ready"] .from-elm, [state="ready"] .to-elm {
+  opacity: 0;
+}
+
+[state="to"] .to-elm {
+  opacity: 0;
+}
+
+.round-things {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
